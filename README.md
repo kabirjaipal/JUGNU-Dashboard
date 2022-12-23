@@ -8,7 +8,7 @@ a discord music bot website which have many pages and information like about , s
 
 ## **Installation | How to use the Bot Website **
 
-**1.** setup bot first (click here)[https://github.com/kabirsingh2004/JUGNU-MUSIC/blob/main/README.md]
+**1.** setup bot first [click here](https://github.com/kabirsingh2004/JUGNU-MUSIC/blob/main/README.md)
 
 **2.** Download this repo and unzip it | or git clone it `git clone https://github.com/kabirsingh2004/JUGNU-MUSIC.git`
 
