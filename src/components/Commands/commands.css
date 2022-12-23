@@ -1,0 +1,94 @@
+.commands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.commands_title {
+  color: var(--secondary_color);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.commands button {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border: 2px solid gray;
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.commands input {
+  width: 70vw;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  padding: 20px;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid var(--secondary_color);
+  font-size: 20px;
+}
+
+.commandspage {
+  margin-bottom: 120px;
+}
+
+.cmdbox {
+  width: 80vw;
+  background-color: var(--primary_color);
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+  border: 2px solid var(--secondary_color);
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cmd_title {
+  font-size: 20px;
+  /* text-transform: capitalize; */
+  font-weight: bold;
+}
+
+.cmd_description {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+  .commands_title {
+    font-size: 30;
+  }
+  .commands button {
+    padding: 8px 15px 8px 15px;
+    font-size: 10px;
+    margin: 5px;
+  }
+  .commands input {
+    width: 90vw;
+    padding: 15px;
+    outline: none;
+    font-size: 15px;
+  }
+  .cmd_description {
+    font-size: 12px;
+  }
+  .cmdbox {
+    width: 90vw;
+    gap: 20px;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+}

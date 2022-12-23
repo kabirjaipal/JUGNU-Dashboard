@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary_color: #0e1015;
+  --secondary_color: rgb(197, 24, 81);
+  --text_color: #fff;
+  --hover_color: rgb(53, 53, 220);
+  --transition: all 800ms;
+}
+
+/* :root {
+  --primary_color: #0e1015;
+  --secondary_color: rgb(230, 109, 11);
+  --text_color: wheat;
+  --hover_color: pink;
+  --transition: all 800ms;
+} */
+
+body {
+  scroll-behavior: smooth;
+  background-color: var(--primary_color);
+  color: var(--text_color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary_color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text_color);
+}
+
+.hover_line {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover_line::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: var(--secondary_color);
+  transition: var(--transition);
+}
+
+.hover_line:hover::after {
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--primary_color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary_color);
+  border-radius: 20px;
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+}

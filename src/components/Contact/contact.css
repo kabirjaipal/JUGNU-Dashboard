@@ -1,0 +1,108 @@
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 50vw;
+}
+
+.container input,
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--secondary_color);
+  background-color: var(--primary_color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: var(--text_color);
+}
+
+.submit {
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+}
+
+.container label {
+  font-size: 22px;
+  color: var(--secondary_color);
+}
+
+.contactbox h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact_form_title {
+  text-align: center;
+}
+
+.dev_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+
+.dev {
+  margin: 20px;
+  border: 2px solid var(--secondary_color);
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.dev > p {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 200;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.dev > p:hover {
+  color: var(--hover_color);
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .dev_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+  .dev {
+    width: 80vw;
+  }
+  .form,
+  .form_box {
+    width: 80vw;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .container textarea {
+    padding: 30px;
+  }
+}
